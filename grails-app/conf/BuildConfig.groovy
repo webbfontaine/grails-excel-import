@@ -33,13 +33,13 @@ grails.project.dependency.resolution = {
 		}
 		//compile group:'org.apache.poi', name:'poi-contrib', version:'3.7'
 		//compile group:'org.apache.poi', name:'poi-scratchpad', version:'3.7' //ppt, word, visio, outlook support
+        compile "joda-time:joda-time:2.3"
 	}
 
 	plugins {
 		build ":release:3.0.1"
 		build ":tomcat:7.0.53"
-
-		compile ':hibernate:3.6.10.15' {
+		compile ':hibernate4:4.3.5.5' {
 			export = false
 		}
 	}
